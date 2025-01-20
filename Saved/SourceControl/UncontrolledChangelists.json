@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/Projects/UETraining/CppBase/Content/CppBase.umap",
+				"D:/Projects/UETraining/CppBase/Content/CppBaseActor_1.uasset",
+				"D:/Projects/UETraining/CppBase/Content/CppBaseActor_2.uasset",
+				"D:/Projects/UETraining/CppBase/Content/CppBaseActor_3.uasset",
+				"D:/Projects/UETraining/CppBase/Content/CppBaseActor_4.uasset",
+				"D:/Projects/UETraining/CppBase/Content/CppBaseActor_5.uasset",
+				"D:/Projects/UETraining/CppBase/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"D:/Projects/UETraining/CppBaseMyProject/Content/CppBase.umap"
+			]
+		}
+	]
+}
