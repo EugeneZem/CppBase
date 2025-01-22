@@ -2,6 +2,9 @@
 
 
 #include "CppBaseActor.h"
+#include "TimerManager.h"
+#include "Engine/World.h"
+#include "Math/UnrealMathUtility.h"
 
 // Sets default values
 ACppBaseActor::ACppBaseActor()
@@ -18,7 +21,8 @@ ACppBaseActor::ACppBaseActor()
 void ACppBaseActor::BeginPlay()
 {
 	Super::BeginPlay();
-	ShowActorInformation();
+
+	InitialLocation = { 0.0f, 0.0f, 0.0f };
 	
 }
 
@@ -37,3 +41,9 @@ void ACppBaseActor::ShowActorInformation()
 	UE_LOG(LogTemp, Display, TEXT("IsAlive: %i"), IsAlive);
 }
 
+FVector ACppBaseActor::SinMovement(FVector CurrentPosition)
+{
+	CurrentPosition.Z = Amplitude * FMath::Sin(GetWorld()->GetTimeSeconds() * Frequency) + CurrentPosition.Z;
+	return CurrentPosition;
+}
+			
